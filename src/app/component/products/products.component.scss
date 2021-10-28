@@ -1,0 +1,41 @@
+.card-top{
+  // position: relative;
+  // display: flex;
+  // flex-direction: row;
+  // min-width: 0;
+  // word-wrap:break-word;
+  background:#fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius:.25rem;
+}
+
+//top and bottom 每个图片之间的距离
+.item{
+  margin: 10px 25px;
+  text-align: center;
+}
+//图片大小
+.item img{
+  width:70px;
+}
+//a:hover 当鼠标移动到当前图标的时候有颜色的变化
+.item a:hover{
+  color: red;
+}
+//transition: property, duration, timing-function, delay
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+.card img:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1)
+}
+.card{
+  padding: 70px;
+  margin: 10px;
+}
+

@@ -1,0 +1,59 @@
+//min-width: only work when the content is smaller than the mini width
+//word-wrap: break-word 允许长文字转行显示
+//rgba(red, green, blue, alpha) alpha (0,1) fully transparent(浅)-->fully opaque(深)
+.card-table {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+}
+//!important: override the style for specific element 提高优先级
+.center.btn {
+  font-size: 14px !important;
+  margin-top:20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
+}
+
+//margin: 外距离
+//padding: 内距离
+//rem: relative to font-size of the root element
+//vh: relative to 1% of the height of the viewpoint
+//%: relative to the parent element
+.card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+//transform: 做转变
+//translate: 右下+ 左上是-
+.center{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -70%);
+  text-align:center;
+}
+//thin and thick of the font
+//400 is the the normal size
+h4,h6{
+  font-weight: 400;
+}
+//color: inherit Inherits this property from its parent element.
+//border:内边框
+//outline:外边框
+// height:图象本身的 高
+//width: 图像本身的宽度
+// margin: 上下 左右
+.center img{
+  border: none;
+  outline: none;
+  height: 200px;
+  width: 250px;
+
+}

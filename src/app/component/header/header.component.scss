@@ -1,0 +1,13 @@
+.form-control {
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 20px;
+}
+//z-index shows the stack order
+.search-icon{
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  color:blueviolet;
+  right:25%;
+}

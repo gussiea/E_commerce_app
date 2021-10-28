@@ -1,0 +1,23 @@
+<header>
+  <div class="navbar navbar-dark bg-black shadow-sm">
+    <div class="navbar-brand align-item-center d-flex" routerLink="/products">
+      <i style="font-size: 30px" class="fas fa-shipping-fast">&nbsp; </i>
+      <strong style="font-size: 20px">Taobao</strong>
+    </div>
+    <div class="form-group">
+      <!--keyup: when a key is released-->
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="searchTerm"
+        (keyup)="search($event)"
+        placeholder="search 1000+ products"
+      />
+    </div>
+    <span class="fas fa-search search-icon"></span>
+    <button routerLink="/cart" class="btn btn-dark">
+      <i style="font-size: 30px" class="fas fa-cart-plus"></i>
+      <div style="font-size: 10px" class="badge bg-danger">{{ totalItem }}</div>
+    </button>
+  </div>
+</header>
